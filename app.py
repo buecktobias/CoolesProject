@@ -14,8 +14,6 @@ def hello_world():
 def additions_exercise():
     if request.method == "POST":
         result = request.form['result']
-        print(result)
-        print()
         stripped_result = result.strip()
         try:
             int_result = int(stripped_result)
