@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #fff;
+	font: .74em "Trebuchet MS" Verdana, Arial, sans-serif;
+	line-height: 1.5em;
+
+}
+a {
+	color: #3B6EBF;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+.b {
+	text-align: center;
+
+}
+#wrap {
+margin: 20px auto;
+width: 724px;
+background: #fff url('images/midd.jpg');
+background-repeat: repeat-y;
+}
+
+#top {
+background: #fff url('images/topp.jpg');
+height: 26px;
+}
+
+#content {
+padding: 0 40px 0 40px;
+}
+
+#bottom {
+
+background: #fff url('images/bott.jpg');
+height: 20px;
+}
+
+
+.header {
+height: 100px;
+background: #85ACF7 url('images/hidr.jpg');
+}
+
+.header h1 { padding-left: 17px; padding-top: 22px; font-size: 22px; color: #FFF; }
+.header h1 a { font-size: 22px; color: #FFF; text-decoration: none;}
+.header h2 { padding-left: 17px; padding-top: 0px; font-size: 17px; color: #FFF; }
+
+
+.breadcrumbs {
+    background: #F6F9FB;
+	border-bottom: 1px solid #E1E1E1;
+	padding: 5px;
+}
+
+.middle {
+	float: left;
+	width: 59%;
+	margin: 0 10px;
+	padding: 1% 1%;
+	text-align: justify;
+}
+
+.right {
+	float: left;
+	width: 30%;
+	margin: 0 10px;
+	padding: 1% 1%;
+
+}
+
+.right ul {
+	padding: 20px 0 15px 20px;
+	margin:0;
+}
+
+.right li {
+	margin-bottom:5px;
+	list-style-type: square;
+	color: #3B6EBF;
+}
+
+.middle h2 { color: #3B6EBF; font-size: 16px; margin-bottom: 10px; margin-top: 10px;}
+.right h2 { color: #3B6EBF; font-size: 14px; margin-top: 15px;}
+
+
+#clear {
+	display: block;
+	clear: both;
+	width: 100%;
+	height:1px;
+	overflow:hidden;
+}
+
+#footer {
+	text-align: center;
+	color: #666;
+}
+
+main {
+  background: transparent;
+  border-color: transparent;
+}
+
+#gallery {
+  position: relative;
+  margin:0;
+  background: none;
+  border: none;
+}
+
+#gallery figure {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 2em;
+  z-index: 1;
+  animation: wechseln 15s infinite;
+}
+
+#gallery figure:last-of-type {
+  position: relative;
+}
+
+#gallery > figure figcaption {
+  position: absolute;
+  left: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  bottom: 0.5em;
+  z-index: 2;
+  color: white;
+
+}
+
+@keyframes wechseln {
+    0% {opacity: 0;}
+   20% {opacity: 1;}
+   40% {opacity: 1;}
+   60% {opacity: 0;}
+  100% {opacity: 0;}
+}
+   /* das zweite Bild startet nach 5 sekunden, das 3. Bild nach 10 Sekunden etc. */
+#gallery figure:nth-of-type(2) {
+  animation-delay: 5s;
+  opacity: 0;
+}
+
+#gallery figure:nth-of-type(3) {
+  animation-delay: 10s;
+  opacity: 0;
+}
+
+#gallery figure:nth-of-type(4) {
+  animation-delay: 15s;
+  opacity: 0;
+}
+
+#gallery figure:nth-of-type(5) {
+  animation-delay: 20s;
+  opacity: 0;
+}
+
+#gallery figure:nth-of-type(6) {
+  animation-delay: 25s;
+  opacity: 0;
+}
+
+
+#gallery figure:nth-of-type(7) {
+  animation-delay: 30s;
+  opacity: 0;
+}
+
+
+#gallery figure:nth-of-type(8) {
+  animation-delay: 35s;
+  opacity: 0;
+}
+
+#gallery figure:nth-of-type(9) {
+  animation-delay: 40s;
+  opacity: 0;
+}
